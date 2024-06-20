@@ -1,0 +1,186 @@
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #0f0e0e;
+}
+
+h1,
+h2 {
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 30px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    transform: scale(1.1);
+}
+
+nav ul li a:active {
+    background: linear-gradient(45deg, #004494, #003472);
+    transform: scale(1);
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    width: 80%;
+    max-width: 1200px;
+    background: rgba(65, 127, 154, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    gap: 15px;
+}
+
+label {
+    font-size: 1.2em;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="file"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-top: 5px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    color: white;
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #0072ff, #00c6ff);
+    transform: scale(1.05);
+}
+
+button:active {
+    background: linear-gradient(45deg, #004494, #003472);
+    transform: scale(1);
+}
+
+#songList {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    margin: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px;
+    backdrop-filter: blur(10px);
+}
+
+#songList .song {
+    padding: 15px;
+    margin: 10px 0;
+    background: rgba(0, 0, 0, 0.852);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+#songList .song:hover {
+    transform: scale(1.02);
+    background: linear-gradient(45deg, #0072ff, #00c6ff);
+}
+
+#songList .song img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#songList .song h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+#songList .song p {
+    margin: 5px 0;
+    color: #ddd;
+}
+
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pagination a,
+.pagination span {
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.185);
+    transition: background 0.3s, transform 0.3s;
+}
+
+.pagination a:hover {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    transform: scale(1.1);
+}
+
+.pagination .current-page {
+    background: linear-gradient(45deg, #004494, #003472);
+    transform: scale(1);
+    pointer-events: none;
+}
